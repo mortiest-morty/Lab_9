@@ -149,31 +149,6 @@ void task_3() {
 	secreteFunction();
 }
 
-void makeFileFor4Task(std::string str) {
-	using namespace std;
-	fstream f1;
-	f1.open("logic.dat", ios::in | ios::out | ios::binary);
-	f1.write((char*)&str, sizeof(str));
-	f1.close();
-}
 
-void calculating(std::string) {
 
-}
 
-void task_4() {
-	using namespace std;
-	fstream f1;
-	string str = "And(Or(T,F),T)", str1 = "Or(And(T,T),And(F,F))", str2 = "Or(T,F)", result;
-
-	makeFileFor4Task(str);
-
-	f1.open("logic.dat", ios::in | ios::out | ios::binary);
-	f1.read((char*)&result, sizeof(result));
-	
-	for (int i : str) {
-		cout << i;
-	}
-	
-
-}
