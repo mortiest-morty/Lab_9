@@ -148,6 +148,7 @@ void task_3() {
 	cout << endl;
 	secreteFunction();
 }
+void task_4();
 
 
 
